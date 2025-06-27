@@ -1,29 +1,26 @@
-import Box from "@mui/material/Box"
 import Typography from "@mui/material/Typography"
 import Card from "@mui/material/Card"
 import CardActionArea from "@mui/material/CardActionArea"
 import CardContent from '@mui/material/CardContent'
 import Grid from '@mui/material/Grid';
 
+export default function ItemCard(props) {
 
+  const { link, title, description, gridSize} = props
 
-export default function ServiceCard(props) {
-
-  const { service } = props
-
-  return <Grid size={4}>
+  return <Grid size={gridSize}>
     <Card variant='outlined'>
-      <CardActionArea href={service.path} target="_blank">
+      <CardActionArea href={link}>
         <Typography
           variant="h3"
           sx={{ mx: '15px', borderBottom: '3px solid blue', width: '100%', pb: '3px'}}
         >
-          {service.service}
+          {title}
         </Typography>
 
         <CardContent>
           <Typography>
-            {service.info}
+            {description}
           </Typography>
         </CardContent>
       </CardActionArea>

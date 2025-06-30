@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router'
 
 import Header from './Header.jsx';
-import ResponsiveAppBar from './ResponsiveAppBar.jsx'
+import TopNav from './TopNav.jsx';
 import BreadcrumbNav from './BreadcrumbNav.jsx';
 import Footer from './Footer.jsx';
 
@@ -30,10 +30,11 @@ const pages = [
 export default function Router() {
   return (
     <BrowserRouter>
+
       <Header />
-      <ResponsiveAppBar pages={pages}/>
-      {/* TODO: fix bread crumb section */}
+      <TopNav pages={pages}/>
       <BreadcrumbNav />
+      {/* <Footer/> */}
       
       <Routes>
         <Route index element={<HomeScreen/>} />
@@ -47,7 +48,6 @@ export default function Router() {
         <Route path='*' element={<PageNotFound />}/>
       </Routes>
 
-      {/* <Footer/> */}
     </BrowserRouter>
   )
 }

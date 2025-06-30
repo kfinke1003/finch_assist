@@ -11,7 +11,7 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 
 
-function ResponsiveAppBar(props) {
+export default function TopNav(props) {
   
   const { pages } = props
   
@@ -69,7 +69,7 @@ function ResponsiveAppBar(props) {
           <Button
             key={page.id}
             href={page.path}
-            sx={{ my: 2, color: 'white', display: 'block' }}
+            sx={{ my: 2, color: 'white', display: 'block', fontSize: '1.1rem' }}
           >
             {page.title}
           </Button>
@@ -92,4 +92,4 @@ function ResponsiveAppBar(props) {
     </AppBar>
   );
 }
-export default ResponsiveAppBar;
+

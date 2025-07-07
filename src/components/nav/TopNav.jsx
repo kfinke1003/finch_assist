@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom'
+
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -67,8 +69,8 @@ export default function TopNav(props) {
       <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
         {pages.map((page) => (
           <Button
-            key={page.id}
-            href={page.path}
+            component={Link}
+            to={`/${page.path}`}
             sx={{ my: 2, color: 'white', display: 'block', fontSize: '1.1rem' }}
           >
             {page.title}

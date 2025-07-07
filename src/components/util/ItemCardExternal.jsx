@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom'
-
 import Typography from "@mui/material/Typography"
 import Box from "@mui/material/Box"
 import Card from "@mui/material/Card"
@@ -7,15 +5,14 @@ import CardActionArea from "@mui/material/CardActionArea"
 import CardContent from '@mui/material/CardContent'
 import Grid from '@mui/material/Grid';
 
-export default function ItemCard(props) {
+export default function ItemCardExternal(props) {
 
   const { link, title, description } = props
 
   return (
     <Card variant='outlined' sx={{maxWidth: '400px', minWidth: '200px'}}>
       <CardActionArea
-        component={Link} 
-        to={`/${link}`} 
+        href={link}
         sx={{display: "flex",
           flexDirection: "column",
           alignItems: "flex-start",

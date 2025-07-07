@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router'
+import { BrowserRouter, HashRouter, Routes, Route } from 'react-router'
 import Box  from '@mui/material/Box';
 
 import Header from './Header.jsx';
@@ -57,7 +57,7 @@ const pages = [
 ]
 export default function Router() {
   return (
-    <BrowserRouter>
+    <HashRouter>
 
       <Header />
       <TopNav pages={pages}/>
@@ -65,7 +65,7 @@ export default function Router() {
       
       <Box sx={{mb: '120px'}}>
         <Routes>
-          <Route index element={<HomeScreen/>} />
+          <Route index element={<TestScreen/>} />
 
           {/* In order to give routes their own page, they must be at the parent level - even if they are of the for parent/child */}
 
@@ -78,6 +78,6 @@ export default function Router() {
       </Box>
 
       <Footer/>
-    </BrowserRouter>
+    </HashRouter>
   )
 }

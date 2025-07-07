@@ -6,7 +6,7 @@ import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import Divider from '@mui/material/Divider';
 
-import ItemCard from '../util/ItemCard';
+import ItemCardExternal from '../util/ItemCardExternal.jsx';
 
 export default function FormsScreen(props) {
 
@@ -32,7 +32,7 @@ export default function FormsScreen(props) {
 
             <Box sx={{mx: {lg: '10%', xl: '20%'}}}>
                 <Grid container spacing={2} columns={{xs: 1, md: 3}}>
-                        {filteredForms.map(form => <Grid key={form.id} size={{xs: 3, md: 1}}><ItemCard link={form.path} title={form.form} description={form.info}/></Grid>)}
+                        {filteredForms.map(form => <Grid key={form.id} size={{xs: 3, md: 1}}><ItemCardExternal link={form.path} title={form.form} description={form.info}/></Grid>)}
                 </Grid>
             </Box>
         </Box>

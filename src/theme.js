@@ -16,10 +16,12 @@ const theme = createTheme({
     background: {
       default: '#f9fafc',
       paper: '#ffffff',
+      footer: '#282728',
     },
     text: {
       primary: '#212121',
       secondary: '#555555',
+      footer: '#adadad'
     },
   },
   typography: {

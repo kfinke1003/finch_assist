@@ -1,7 +1,7 @@
 {
   "name": "finch_assist",
   "version": "0.1.0",
-  "homepage": "https://kfinke1003.github.io/finch_assist",
+  "homepage": "http://it.bockwaterheaters.com",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.14.0",

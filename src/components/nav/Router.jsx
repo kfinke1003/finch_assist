@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, HashRouter, Routes, Route } from 'react-router'
+import { HashRouter, Routes, Route } from 'react-router'
 import Box  from '@mui/material/Box';
 
 import Header from './Header.jsx';
@@ -11,36 +11,40 @@ import HomeScreen from '../HomeScreen/HomeScreen.jsx'
 import ServicesScreen from '../ServicesScreen/ServicesScreen.jsx'
 import FormsScreen from '../FormsScreen/FormsScreen.jsx';
 
-import VPNServiceScreen from "../ServicesScreen/Services/VPNServiceScreen.jsx"
+import { duo_md, duo_info } from '../ServicesScreen/Services/DUO.js';
+import { watchguard_vpn_info, watchguard_vpn_md } from '../ServicesScreen/Services/WatchGuardMobileVPN.js';
+import { m365_info, m365_md } from '../ServicesScreen/Services/Microsoft365.js';
+
+import RenderMarkdown from '../util/RenderMarkdown.jsx';
 
 import PageNotFound from './PageNotFound.jsx';
-import TestScreen from '../TestScreen.jsx'
+import TestScreen from '../util/TestScreen.jsx'
 
 const services = [
-  {id: 0, service: 'VPN', path: 'services/vpn', element: <VPNServiceScreen />, info: 'WatchGuard Mobile VPN allows you to access company resources from almost anywhere—provided you have an internet connection.'},
-  {id: 1, service: 'Legitronic Labeling Software', path: 'services/legi', element: <TestScreen />, info: 'Temp data.'},
-  {id: 2, service: 'TCM', path: 'services/tcm', element: <TestScreen />, info: 'Temp data.'},
-  {id: 3, service: 'DUO', path: 'services/duo', element: <TestScreen />, info: 'Temp data.'},
-  {id: 4, service: 'Dash', path: 'services/dash', element: <TestScreen />, info: 'Temp data.'},
-  {id: 5, service: 'Microsoft 365', path: 'services/m365', element: <TestScreen />, info: 'Temp data.'},
-  {id: 6, service: 'OneDrive', path: 'services/onedrive', element: <TestScreen />, info: 'Temp data.'},
-  {id: 7, service: 'SharePoint', path: 'services/sharepoint', element: <TestScreen />, info: 'Temp data.'},
-  {id: 8, service: 'Outlook', path: 'services/outlook', element: <TestScreen />, info: 'Temp data.'},
+  {id: 0, service: 'WatchGuard Mobile VPN', path: 'services/vpn', element: <RenderMarkdown markdown={watchguard_vpn_md} />, info: watchguard_vpn_info},
+  // {id: 1, service: 'Legitronic Labeling Software', path: 'services/legi', element: <TestScreen />, info: 'Temp data.'},
+  // {id: 2, service: 'TCM', path: 'services/tcm', element: <TestScreen />, info: 'Temp data.'},
+  {id: 3, service: 'Duo MFA', path: 'services/duo', element: <RenderMarkdown markdown={duo_md} />, info: duo_info},
+  // {id: 4, service: 'Dash', path: 'services/dash', element: <TestScreen />, info: 'Temp data.'},
+  {id: 5, service: 'Microsoft 365', path: 'services/m365', element: <RenderMarkdown markdown={m365_md} />, info: m365_info},
+  // {id: 6, service: 'OneDrive', path: 'services/onedrive', element: <TestScreen />, info: 'Temp data.'},
+  // {id: 7, service: 'SharePoint', path: 'services/sharepoint', element: <TestScreen />, info: 'Temp data.'},
+  // {id: 8, service: 'Outlook', path: 'services/outlook', element: <TestScreen />, info: 'Temp data.'},
   {id: 9, service: 'Teams', path: 'services/teams', element: <TestScreen />, info: 'Temp data.'},
-  {id: 10, service: 'Word', path: 'services/word', element: <TestScreen />, info: 'Temp data.'},
-  {id: 11, service: 'Excel', path: 'services/excel', element: <TestScreen />, info: 'Temp data.'},
-  {id: 12, service: 'Access', path: 'services/access', element: <TestScreen />, info: 'Temp data.'},
-  {id: 13, service: 'Word', path: 'services/word', element: <TestScreen />, info: 'Temp data.'},
+  // {id: 10, service: 'Word', path: 'services/word', element: <TestScreen />, info: 'Temp data.'},
+  // {id: 11, service: 'Excel', path: 'services/excel', element: <TestScreen />, info: 'Temp data.'},
+  // {id: 12, service: 'Access', path: 'services/access', element: <TestScreen />, info: 'Temp data.'},
+  // {id: 13, service: 'M365 Groups', path: 'services/groups', element: <TestScreen />, info: 'Temp data.'},
   {id: 14, service: 'Company Calendar', path: 'services/company_calendar', element: <TestScreen />, info: 'Temp data.'},
-  {id: 15, service: 'MDC', path: 'services/mdc', element: <TestScreen />, info: 'Temp data.'},
-  {id: 16, service: 'SOLIDWORKS', path: 'services/solidworks', element: <TestScreen />, info: 'Temp data.'},
-  {id: 17, service: 'AutoCAD', path: 'services/autocad', element: <TestScreen />, info: 'Temp data.'},
-  {id: 18, service: 'PDM', path: 'services/pdm', element: <TestScreen />, info: 'Temp data.'},
+  // {id: 15, service: 'MDC', path: 'services/mdc', element: <TestScreen />, info: 'Temp data.'},
+  // {id: 16, service: 'SOLIDWORKS', path: 'services/solidworks', element: <TestScreen />, info: 'Temp data.'},
+  // {id: 17, service: 'AutoCAD', path: 'services/autocad', element: <TestScreen />, info: 'Temp data.'},
+  // {id: 18, service: 'PDM', path: 'services/pdm', element: <TestScreen />, info: 'Temp data.'},
   {id: 19, service: 'RingCentral', path: 'services/ringcentral', element: <TestScreen />, info: 'Temp data.'},
-  {id: 20, service: 'Power Automate', path: 'services/powerautomate', element: <TestScreen />, info: 'Temp data.'},
-  {id: 21, service: 'Sales Reports', path: 'services/salesreports', element: <TestScreen />, info: 'Temp data.'},
-  {id: 22, service: 'Printing', path: 'services/printing', element: <TestScreen />, info: 'Temp data.'},
-  {id: 23, service: 'Modula WMS', path: 'services/modula', element: <TestScreen />, info: 'Temp data.'},
+  // {id: 20, service: 'Power Automate', path: 'services/powerautomate', element: <TestScreen />, info: 'Temp data.'},
+  // {id: 21, service: 'Sales Reports', path: 'services/salesreports', element: <TestScreen />, info: 'Temp data.'},
+  // {id: 22, service: 'Printing', path: 'services/printing', element: <TestScreen />, info: 'Temp data.'},
+  // {id: 23, service: 'Modula WMS', path: 'services/modula', element: <TestScreen />, info: 'Temp data.'},
 ]
 
 const forms = [
@@ -65,7 +69,7 @@ export default function Router() {
       
       <Box sx={{mb: '120px'}}>
         <Routes>
-          <Route index element={<TestScreen/>} />
+          <Route index element={<HomeScreen/>} />
 
           {/* In order to give routes their own page, they must be at the parent level - even if they are of the for parent/child */}
 

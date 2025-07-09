@@ -9,9 +9,6 @@ import React, {
 } from "react";
 import gsap from "gsap";
 import "./CardSwap.css";
-import { useTheme } from '@emotion/react';
-
-
 
 export const Card = forwardRef(
   ({ customClass, ...rest }, ref) => (
@@ -60,7 +57,6 @@ const CardSwap = ({
   easing = "elastic",
   children,
 }) => {
-  const theme = useTheme()
   const config =
     easing === "elastic"
       ? {

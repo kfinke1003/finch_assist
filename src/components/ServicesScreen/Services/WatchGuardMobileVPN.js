@@ -16,7 +16,7 @@ Note: please do not use the VPN while connected to the internet at Bock or TTI. 
 - **Remote Access**: Allows you to access company resources from almost anywhere with internet.
 - **User-Friendly Interface**: Easy-to-install client software with a simple user interface.
 - **Integrated Authentication**: Works with your existing account and Duo.
-- **Secure Access**: Uses SSL encryption to protect data from your computer to our network.
+- **Secure Access**: Uses SSL encryption to protect data sent between your computer and our network.
 
 ## Requirements
 
@@ -44,5 +44,8 @@ Note: please do not use the VPN while connected to the internet at Bock or TTI. 
    - Enter your credentials and connect.
    - You will need to approve a Duo push notification in order to connect.
    - Once connected, you can securely access internal resources.
+
+## Support
+- Contact our IT Help Desk
 
 `

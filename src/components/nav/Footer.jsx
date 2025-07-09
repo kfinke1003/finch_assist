@@ -16,11 +16,8 @@ export default function Footer() {
       mt: '30px', 
       borderTop: '5px solid', 
       borderColor: theme.palette.secondary.main, 
-      height: '60px',
-      position: 'fixed',
-      left: '0',
-      bottom: '0',
-      right: '0' }}>
+      height: '60px'
+      }}>
       <CodeIcon sx={{ mr: 1, color: theme.palette.text.footer }} />
       <Typography
         variant="h6"
@@ -32,7 +29,6 @@ export default function Footer() {
           fontFamily: 'monospace',
           fontWeight: 700,
           letterSpacing: '.3rem',
-          color: 'inherit',
           textDecoration: 'none',
           color: theme.palette.text.footer
         }}

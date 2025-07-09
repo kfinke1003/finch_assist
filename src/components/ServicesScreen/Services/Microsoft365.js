@@ -4,6 +4,8 @@ export const m365_md = `
 # Microsoft 365
 *Last Updated: July 8, 2025*
 
+## Overview
+
 Microsoft 365 (formerly Office 365) is a suite of productivty tools hosted by Microsoft. In addition to email and calendaring features, Microsoft 365 provides multiple applications such as OneDrive, the Office Suite and additional productivity tools.
 
 ## Benefits
@@ -27,4 +29,9 @@ Microsoft 365 (formerly Office 365) is a suite of productivty tools hosted by Mi
 - **Power Automate**: This tool allows you to automate workflows between different applications. For example, you can automatically start and approval process and send an email notifcation whenever someone fill out a form.
 - **Forms**: Forms allow you to create surveys, registrations, data collection forms, and more. Results can be viewed in real time in the web portal or Excel. Forms can be integrated with Power Automate to automate workflows.
 - **Teams**: Teams is a chat-based app that allows for quick and easy collaboration between people. Files can be easily shared and collaborated on. Creating a M365 group can facilitate efficient collaboration in Teams on projects involving many people.
+
+## Support
+- Contact our IT Help Desk
+- Check out [UW Madison's Glossary of Microsoft 365 Terms](https://kb.wisc.edu/microsoft365/34729)
+
 `

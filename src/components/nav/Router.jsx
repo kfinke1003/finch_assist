@@ -5,7 +5,7 @@ import Box  from '@mui/material/Box';
 import Header from './Header.jsx';
 import TopNav from './TopNav.jsx';
 import BreadcrumbNav from './BreadcrumbNav.jsx';
-import Footer from './Footer.jsx';
+// import Footer from './Footer.jsx';
 
 import HomeScreen from '../HomeScreen/HomeScreen.jsx'
 import ServicesScreen from '../ServicesScreen/ServicesScreen.jsx'
@@ -14,6 +14,7 @@ import FormsScreen from '../FormsScreen/FormsScreen.jsx';
 import { duo_md, duo_info } from '../ServicesScreen/Services/DUO.js';
 import { watchguard_vpn_info, watchguard_vpn_md } from '../ServicesScreen/Services/WatchGuardMobileVPN.js';
 import { m365_info, m365_md } from '../ServicesScreen/Services/Microsoft365.js';
+import { ringcentral_info, ringcentral_md } from '../ServicesScreen/Services/RingCentral.js';
 
 import RenderMarkdown from '../util/RenderMarkdown.jsx';
 
@@ -40,7 +41,7 @@ const services = [
   // {id: 16, service: 'SOLIDWORKS', path: 'services/solidworks', element: <TestScreen />, info: 'Temp data.'},
   // {id: 17, service: 'AutoCAD', path: 'services/autocad', element: <TestScreen />, info: 'Temp data.'},
   // {id: 18, service: 'PDM', path: 'services/pdm', element: <TestScreen />, info: 'Temp data.'},
-  {id: 19, service: 'RingCentral', path: 'services/ringcentral', element: <TestScreen />, info: 'Temp data.'},
+  {id: 19, service: 'RingCentral', path: 'services/ringcentral', element: <RenderMarkdown markdown={ringcentral_md} />, info: ringcentral_info},
   // {id: 20, service: 'Power Automate', path: 'services/powerautomate', element: <TestScreen />, info: 'Temp data.'},
   // {id: 21, service: 'Sales Reports', path: 'services/salesreports', element: <TestScreen />, info: 'Temp data.'},
   // {id: 22, service: 'Printing', path: 'services/printing', element: <TestScreen />, info: 'Temp data.'},
@@ -62,26 +63,24 @@ const pages = [
 export default function Router() {
   return (
     <HashRouter>
-
       <Header />
-      <TopNav pages={pages}/>
-      <BreadcrumbNav />
-      
-      <Box sx={{mb: '120px'}}>
-        <Routes>
-          <Route index element={<HomeScreen/>} />
+        <TopNav pages={pages}/>
+        <BreadcrumbNav />
 
-          {/* In order to give routes their own page, they must be at the parent level - even if they are of the for parent/child */}
+        <Box sx={{mb: '120px'}}>
+          <Routes>
+            <Route index element={<HomeScreen/>} />
 
-          {pages.map(page => <Route key={page.id} path={page.path} element={page.element} />)}
+            {/* In order to give routes their own page, they must be at the parent level - even if they are of the for parent/child */}
 
-          {services.map(service => <Route key={service.id} path={service.path} element={service.element}/>)}
+            {pages.map(page => <Route key={page.id} path={page.path} element={page.element} />)}
 
-          <Route path='*' element={<PageNotFound />}/>
-        </Routes>
-      </Box>
+            {services.map(service => <Route key={service.id} path={service.path} element={service.element}/>)}
 
-      <Footer/>
+            <Route path='*' element={<PageNotFound />}/>
+          </Routes>
+        </Box>
+        {/* <Footer/> */}
     </HashRouter>
   )
 }

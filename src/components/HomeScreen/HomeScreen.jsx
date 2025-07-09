@@ -25,7 +25,7 @@ export default function HomeScreen() {
   ]
 
   return (
-    <Box sx={{display: 'flex', justifyContent: 'center', flexDirection: 'row', borderRadius: '15px', width: 'fit-content', margin: 'auto', background: 'linear-gradient(135deg, #f5f7fa,rgb(92, 96, 169))',}}>
+    <Box sx={{display: 'flex', justifyContent: 'center', flexDirection: 'row', borderRadius: '15px', width: 'fit-content', margin: 'auto', background: 'linear-gradient(135deg, #f5f7fa,rgb(92, 96, 169))', scale: '1.2'}}>
 
       <Box sx={{ height: height, width: width, display: 'flex', justifyContent: 'center', flexDirection: 'column', px: '5%'}}>
         <Typography variant='h1' sx={{ width: 'fit-content'}}>Welcome!</Typography>

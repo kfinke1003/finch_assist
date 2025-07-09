@@ -59,7 +59,7 @@ export default function HomeScreen() {
           </Card>
           <Card>
             <CardSwapHeader bg={bg_colors[4]} icon={<HelpIcon />} text={'Help'} />
-            <CardSwapBody bg={bg_colors[4]} text={'Having technicial issues? We can assist you over on the Help page.'} />
+            <CardSwapBody bg={bg_colors[4]} text={'Having technical issues? We can assist you over on the Help page.'} />
           </Card>
         </CardSwap>
       </Box>

@@ -39,6 +39,20 @@ const theme = createTheme({
       fontSize: '1.6rem',
       fontWeight: 500,
     },
+    card_h: {
+      fontSize: '1.6rem',
+      fontFamily: 'monospace',
+      fontWeight: 700,
+      letterSpacing: '.3rem',
+      color: 'inherit',
+      textDecoration: 'none',
+      pl: '5px'
+    },
+    card_b : {
+      mx: '5%',
+      my: '5%',
+      fontSize: '1.2rem'
+    },
     body1: {
       fontSize: '1rem',
       lineHeight: 1.6,

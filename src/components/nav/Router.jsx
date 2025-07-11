@@ -10,11 +10,17 @@ import BreadcrumbNav from './BreadcrumbNav.jsx';
 import HomeScreen from '../HomeScreen/HomeScreen.jsx'
 import ServicesScreen from '../ServicesScreen/ServicesScreen.jsx'
 import FormsScreen from '../FormsScreen/FormsScreen.jsx';
+import ProjectsScreen from '../ProjectsScreen/ProjectsScreen.jsx';
+import CybersecurityScreen from '../CybersecurityScreen/CybersecurityScreen.jsx';
+import HelpScreen from '../HelpScreen/HelpScreen.jsx';
 
 import { duo_md, duo_info } from '../ServicesScreen/Services/DUO.js';
 import { watchguard_vpn_info, watchguard_vpn_md } from '../ServicesScreen/Services/WatchGuardMobileVPN.js';
 import { m365_info, m365_md } from '../ServicesScreen/Services/Microsoft365.js';
 import { ringcentral_info, ringcentral_md } from '../ServicesScreen/Services/RingCentral.js';
+import { teams_info, teams_md } from '../ServicesScreen/Services/M365Teams.js';
+import { groups_info, groups_md } from '../ServicesScreen/Services/M365Groups.js';
+import { companyCalendar_info, companyCalendar_md } from '../ServicesScreen/Services/CompanyCalendar.js';
 
 import RenderMarkdown from '../util/RenderMarkdown.jsx';
 
@@ -31,12 +37,12 @@ const services = [
   // {id: 6, service: 'OneDrive', path: 'services/onedrive', element: <TestScreen />, info: 'Temp data.'},
   // {id: 7, service: 'SharePoint', path: 'services/sharepoint', element: <TestScreen />, info: 'Temp data.'},
   // {id: 8, service: 'Outlook', path: 'services/outlook', element: <TestScreen />, info: 'Temp data.'},
-  {id: 9, service: 'Teams', path: 'services/teams', element: <TestScreen />, info: 'Temp data.'},
-  // {id: 10, service: 'Word', path: 'services/word', element: <TestScreen />, info: 'Temp data.'},
-  // {id: 11, service: 'Excel', path: 'services/excel', element: <TestScreen />, info: 'Temp data.'},
-  // {id: 12, service: 'Access', path: 'services/access', element: <TestScreen />, info: 'Temp data.'},
-  // {id: 13, service: 'M365 Groups', path: 'services/groups', element: <TestScreen />, info: 'Temp data.'},
-  {id: 14, service: 'Company Calendar', path: 'services/company_calendar', element: <TestScreen />, info: 'Temp data.'},
+  {id: 9, service: 'Microsoft Teams', path: 'services/teams', element: <RenderMarkdown markdown={teams_md} />, info: teams_info},
+  // {id: 10, service: 'Microsoft Word', path: 'services/word', element: <TestScreen />, info: 'Temp data.'},
+  // {id: 11, service: 'Microsoft Excel', path: 'services/excel', element: <TestScreen />, info: 'Temp data.'},
+  // {id: 12, service: 'Microsoft Access', path: 'services/access', element: <TestScreen />, info: 'Temp data.'},
+  {id: 13, service: 'Microsoft 365 Groups', path: 'services/groups', element: <RenderMarkdown markdown={groups_md} />, info: groups_info},
+  {id: 14, service: 'Company Calendar', path: 'services/company_calendar', element: <RenderMarkdown markdown={companyCalendar_md} />, info: companyCalendar_info},
   // {id: 15, service: 'MDC', path: 'services/mdc', element: <TestScreen />, info: 'Temp data.'},
   // {id: 16, service: 'SOLIDWORKS', path: 'services/solidworks', element: <TestScreen />, info: 'Temp data.'},
   // {id: 17, service: 'AutoCAD', path: 'services/autocad', element: <TestScreen />, info: 'Temp data.'},
@@ -50,15 +56,16 @@ const services = [
 
 const forms = [
   {id: 0, form: 'IT Purchase Request', path: 'https://forms.cloud.microsoft/r/SyBtDxyaiq', info: 'Use this form to request a purchase from IT.'},
-  {id: 1, form: 'IT On-boarding & Account Creation', path: 'https://forms.cloud.microsoft/r/i7t9ys7hqH', info: 'Use this form to request an account be created on behalf of someone.'},
+  {id: 1, form: 'IT On-boarding & Account Creation Requets', path: 'https://forms.cloud.microsoft/r/i7t9ys7hqH', info: 'Use this form to request a user/email account be created on behalf of someone.'},
+  {id: 2, form: 'Representative Account Creation Request', path: 'https://forms.cloud.microsoft/r/4funV8V47B', info: 'Use this form to request the creation of a rep account.'},
 ]
 
 const pages = [
   {id: 0, title: 'Services', path: 'services', element: <ServicesScreen services={services} />},
   {id: 1, title: 'Forms', path: 'forms', element: <FormsScreen forms={forms} />},
-  {id: 2, title: 'Projects', path: 'projects', element: <TestScreen />},
-  {id: 3, title: 'Cybersecurity', path: 'cybersecurity', element: <TestScreen />},
-  {id: 4, title: 'Help', path: 'help', element: <TestScreen />},
+  {id: 2, title: 'Projects', path: 'projects', element: <ProjectsScreen />},
+  {id: 3, title: 'Cybersecurity', path: 'cybersecurity', element: <CybersecurityScreen />},
+  {id: 4, title: 'Help', path: 'help', element: <HelpScreen />},
 ]
 export default function Router() {
   return (

@@ -26,6 +26,6 @@ Please note that Duo is only as effective as you make it. Approving push notific
 - LINK TO TOKEN ENROLLMENT
 
 ## Support
-- Contact our IT Help Desk
+- Contact our [IT Help Desk](https://it.bockwaterheaters.com/#/help)
 
 `

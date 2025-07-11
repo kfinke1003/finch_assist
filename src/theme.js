@@ -54,12 +54,10 @@ const theme = createTheme({
       fontSize: '1.2rem'
     },
     body1: {
-      fontSize: '1rem',
-      lineHeight: 1.6,
+      fontSize: '1.1rem',
     },
     body2: {
       fontSize: '0.95rem',
-      lineHeight: 1.5,
     },
     button: {
       textTransform: 'none',

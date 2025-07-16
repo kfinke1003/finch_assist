@@ -3,7 +3,7 @@ export const watchguard_vpn_info = 'WatchGuard Mobile VPN allows you to access c
 export const watchguard_vpn_md = `
 # WatchGuard Mobile VPN with SSL Client
 
-*Last updated: July 8, 2025*
+*Last updated: July 14, 2025*
 
 ## Overview
 
@@ -32,7 +32,7 @@ Note: please do not use the VPN while connected to the internet at Bock or TTI. 
 
 2. **Connect yourself to the internet**:
    - In order to use the VPN you will need to have an internet connection
-   - Please connected yourself via WiFi or Ethernet. A mobile hotspot will also work.
+   - Please connected yourself via WiFi or Ethernet. A mobile hot spot will also work.
 
 3. **Search for and run Mobile VPN with SSL Client**:
    - Search 'Mobile VPN with SSL Client' in the Windows search bar

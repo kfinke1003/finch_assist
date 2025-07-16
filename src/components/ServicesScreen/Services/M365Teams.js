@@ -6,7 +6,7 @@ export const teams_info = 'Microsoft Teams is a chat-based communication platfor
 export const teams_md = `
 # Microsoft Teams
 
-*Last Updated: July 11, 2025*
+*Last Updated: July 14, 2025*
 
 ## Overview
 
@@ -18,7 +18,8 @@ This makes it an ideal candidate for collaborating on team projects, hosting vir
 - **Streamlined Communication**: Chat rooms allow for quick messaging and remove the need for confusing email chains.
 - **Effective Collaboration**: You can easily upload, share, and work on documents with individual people and groups.
 - **Easy Scheduling**: Much like Outlook, your calendar and the company calendar can be interacted with on Teams.
-- **RingCentral Integration**: One of Teams' many integrations is with [RingCentral](https://it.bockwaterheaters.com/#/services/ringcentral) — our current telephony platform. 
+- **RingCentral Integration**: One of Teams' many integrations is with [RingCentral](https://it.bockwaterheaters.com/#/services/ringcentral) — our current telephony platform.
+- **Web Access**: Teams can be used from a web browser. Please note that Teams on the web is not compatible with mobile devices.
 
 ## Requirements
 - A user account with us
@@ -26,6 +27,8 @@ This makes it an ideal candidate for collaborating on team projects, hosting vir
 
 ## Getting Started
 - Teams gets installed as part of the [Microsoft 365](https://it.bockwaterheaters.com/#/services/m365) suite.
+
+For online access, go to [https://m365.cloud.microsoft/apps/](https://m365.cloud.microsoft/apps/), sign in, and then click on the Teams icon.
 
 ## Support
 - Contact our [IT Help Desk](https://it.bockwaterheaters.com/#/help)

@@ -19,7 +19,7 @@ export default function HelpScreen() {
 
             <Box sx={{mx: '5%'}}>
                 <Typography variant='h1' sx={{borderBottom: '5px solid blue', width: 'fit-content'}}>Help</Typography>
-                <Typography sx={[theme.typography.body1, {mt: '50px'}]} >Need some help figuring out a technical issue? We offer in-person assistance at both Bock and TTI. We also offer remote assistanace over phone and email.</Typography>
+                <Typography sx={[theme.typography.body1, {mt: '50px'}]} >Need some help figuring out a technical issue? We offer in-person assistance at both Bock and TTI. We also offer remote assistance over phone and email.</Typography>
                 <Box sx={{mx: {lg: '10%', xl: '20%'}, mt: '30px'}}>
                     <Grid container spacing={2} columns={{xs: 1, md: 3}}>
                         <Grid size={{xs: 3, md: 1}}><ItemCardNoLink title='Onsite' description='We typically offer in-person assistance at Bock from 8:00 AM to 5:00 PM, Monday through Friday. Assistance is also usually available at TTI once a week, though the day may vary.' /></Grid>

@@ -3,19 +3,19 @@ export const companyCalendar_info = 'The company calendar provides us with a cen
 
 export const companyCalendar_md = `
 # Company Calendar
-*Last updated on July 11, 2025*
+*Last updated on July 14, 2025*
 
 ## Overview
 
 The company calendar provides us with a central place for sharing company-wide events and notifying others of your availability.
 The calendar can be accessed from either Outlook or Teams.
 
-...
+Note: due to our current implementation of the company calendar, it is not available on the Outlook and Teams mobile apps.
 
 ## Benefits
 - **Simple To Use**: Events can be easily added to and updated on the calendar.
 - **Seamless Integration**: The calendar displays alongside your personal calendar allowing for you to view conflicting events.
-- **Keeps People Informed**: You can easily check on if someone is out of office or availble to chat.
+- **Keeps People Informed**: You can easily check on if someone is out of office or available to chat.
 
 ## Requirements
 - Outlook classic (for initial installation)
@@ -30,7 +30,7 @@ The calendar can be accessed from either Outlook or Teams.
     - Expand the All Public Folders menu
     - Expand the BockPublicFolders menu
 4. Right click Company Calendar and add it to favorites
-    - after doing this it should show up in your calendars tab under other calendars
+    - After doing this, it should show up in your calendars tab under the Other Calendars menu.
 
 ## Support
 - Contact our [IT Help Desk](https://it.bockwaterheaters.com/#/help)

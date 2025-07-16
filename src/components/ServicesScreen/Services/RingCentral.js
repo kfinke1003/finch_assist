@@ -2,7 +2,7 @@ export const ringcentral_info = 'RingCentral is our organization\'s primary plat
 
 export const ringcentral_md = `
 # RingCentral
-*Last updated on July 9, 2025*
+*Last updated on July 14, 2025*
 
 ## Overview
 
@@ -11,7 +11,7 @@ RingCentral is our organization's primary platform for phone calls and voicemail
 Note: you likely already have a RingCentral account through us. If you're unsure of your login credentials or voicemail password, please contact the IT Help Desk.
 
 ## Benefits
-- **Acessibilty**: RingCentral can be used through your deskphone, Teams, the desktop app, or the mobile app.
+- **Accessibility**: RingCentral can be used through your desk phone, Teams, the desktop app, or the mobile app.
 - **Friendly Interface**: The RingCentral apps have a simple and easy to learn interface.
 - **Voicemail & Call Handling**: Customize call forwarding, listen to voicemails, or read voicemail transcriptions directly from the app.
 - **Reliable & Secure**: Enterprise-grade security and strong call quality across all devices.

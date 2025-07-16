@@ -137,6 +137,15 @@ const theme = createTheme({
       },
     },
   },
+  containers: {
+    pageContainer: {
+      display: 'flex', 
+      justifyContent: 'center', 
+      flexDirection: 'column',
+      mx: 'auto',
+      border: '3px solid red'
+    }
+  }
 });
 
 export default theme;

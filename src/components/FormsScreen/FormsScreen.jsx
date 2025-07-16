@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { useTheme } from '@emotion/react';
 
 import Typography from "@mui/material/Typography"
 import Box from "@mui/material/Box"
@@ -12,10 +13,12 @@ export default function FormsScreen(props) {
 
     const { forms } = props
 
+    const theme = useTheme()
+
     const [filteredForms, setFilteredForms] = React.useState(forms)
 
     return (
-        <Box sx={{mx: '30px', display: 'flex', justifyContent: 'center', flexDirection: 'column'}}>
+        <Box sx={theme.containers.pageContainer}>
 
             <Box sx={{mx: '5%'}}>
                 <Typography variant='h1' sx={{borderBottom: '5px solid blue', width: 'fit-content'}}>Forms</Typography>

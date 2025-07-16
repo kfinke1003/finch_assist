@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { useTheme } from '@emotion/react';
 
 import Typography from "@mui/material/Typography"
 import Box from "@mui/material/Box"
@@ -12,10 +13,12 @@ export default function ServicesScreen(props) {
 
     const { services } = props
 
+    const theme = useTheme()
+
     const [filteredServices, setFilteredServices] = React.useState(services)
 
     return (
-        <Box sx={{mx: '30px', display: 'flex', justifyContent: 'center', flexDirection: 'column'}}>
+        <Box sx={theme.containers.pageContainer}>
 
             <Box sx={{mx: '5%'}}>
                 <Typography variant='h1' sx={{borderBottom: '5px solid blue', width: 'fit-content'}}>Services</Typography>

@@ -15,7 +15,7 @@ export default function HelpScreen() {
     const theme = useTheme()
 
     return (
-        <Box sx={{mx: '30px', display: 'flex', justifyContent: 'center', flexDirection: 'column'}}>
+        <Box sx={theme.containers.pageContainer}>
 
             <Box sx={{mx: '5%'}}>
                 <Typography variant='h1' sx={{borderBottom: '5px solid blue', width: 'fit-content'}}>Help</Typography>

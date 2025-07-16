@@ -3,8 +3,6 @@ import * as React from 'react'
 import Typography from "@mui/material/Typography"
 import Box from "@mui/material/Box"
 import Grid from '@mui/material/Grid';
-import TextField from '@mui/material/TextField';
-import Divider from '@mui/material/Divider';
 
 import { useTheme } from '@emotion/react';
 
@@ -15,7 +13,7 @@ export default function ProjectsScreen() {
     const theme = useTheme()
 
     return (
-        <Box sx={{mx: '30px', display: 'flex', justifyContent: 'center', flexDirection: 'column'}}>
+        <Box sx={theme.containers.pageContainer}>
 
             <Box sx={{mx: '5%'}}>
                 <Typography variant='h1' sx={{borderBottom: '5px solid blue', width: 'fit-content'}}>Projects</Typography>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTheme } from '@emotion/react';
 import { useLocation, Link as RouterLink } from 'react-router-dom';
 import { Breadcrumbs, Typography, Link } from '@mui/material';
 import Box from '@mui/material/Box';
@@ -9,6 +10,9 @@ function toTitleCase(str) {
 }
 
 export default function BreadcrumbNav() {
+
+  const theme = useTheme()
+
   const location = useLocation();
   const pathnames = location.pathname.split('/').filter((x) => x);
 
@@ -19,7 +23,7 @@ export default function BreadcrumbNav() {
   <Box sx={{mt: '5%', ml: '20px' }}></Box>
   :
   (
-    <Breadcrumbs aria-label="Breadcrumb" sx={{ my: '30px', ml: '20px' }}>
+    <Breadcrumbs aria-label="Breadcrumb" sx={[theme.containers.responsiveSubContainer, {my: '50px'}]}>
       <Link color="inherit" component={RouterLink} to="/">
         Home
       </Link>

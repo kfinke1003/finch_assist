@@ -17,19 +17,23 @@ export default function HelpScreen() {
     return (
         <Box sx={theme.containers.pageContainer}>
 
-            <Box sx={{mx: '5%'}}>
+            <Box sx={theme.containers.responsiveSubContainer}>
                 <Typography variant='h1' sx={{borderBottom: '5px solid blue', width: 'fit-content'}}>Help</Typography>
                 <Typography sx={[theme.typography.body1, {mt: '50px'}]} >Need some help figuring out a technical issue? We offer in-person assistance at both Bock and TTI. We also offer remote assistance over phone and email.</Typography>
-                <Box sx={{mx: {lg: '10%', xl: '20%'}, mt: '30px'}}>
-                    <Grid container spacing={2} columns={{xs: 1, md: 3}}>
-                        <Grid size={{xs: 3, md: 1}}><ItemCardNoLink title='Onsite' description='We typically offer in-person assistance at Bock from 8:00 AM to 5:00 PM, Monday through Friday. Assistance is also usually available at TTI once a week, though the day may vary.' /></Grid>
-                        <Grid size={{xs: 3, md: 1}}><ItemCardNoLink title='Email' description='Please reach out to us at utwi_it@bockwaterheaters.com for assistance.' /></Grid>
-                        <Grid size={{xs: 3, md: 1}}><ItemCardNoLink title='Phone' description='Please feel free to give us a call at extension 3339 or 3336.' /></Grid>
-                    </Grid>
-                </Box>
+                
             </Box>
 
-            {/* <Divider sx={{my: '30px'}} />
+            <Divider sx={theme.util.divider} />
+
+                <Box sx={theme.containers.responsiveSubContainer}>
+                    <Grid container spacing={3} sx={theme.containers.gridContainer}>
+                        <Grid><ItemCardNoLink title='Onsite' description='We typically offer in-person assistance at Bock from 8:00 AM to 5:00 PM, Monday through Friday. Assistance is also usually available at TTI once a week, though the day may vary.' /></Grid>
+                        <Grid><ItemCardNoLink title='Email' description='Please reach out to us at utwi_it@bockwaterheaters.com for assistance.' /></Grid>
+                        <Grid><ItemCardNoLink title='Phone' description='Please feel free to give us a call at extension 3339 or 3336.' /></Grid>
+                    </Grid>
+                </Box>
+
+            {/* <Divider sx={theme.util.divider} />
 
             <Box sx={{mx: '5%'}}>
                 <Typography variant='h1' sx={{borderBottom: '5px solid blue', width: 'fit-content'}}>Troubleshooting</Typography>

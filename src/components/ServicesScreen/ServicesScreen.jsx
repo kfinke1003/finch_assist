@@ -20,7 +20,7 @@ export default function ServicesScreen(props) {
     return (
         <Box sx={theme.containers.pageContainer}>
 
-            <Box sx={{mx: '5%'}}>
+            <Box sx={theme.containers.responsiveSubContainer}>
                 <Typography variant='h1' sx={{borderBottom: '5px solid blue', width: 'fit-content'}}>Services</Typography>
                 <Typography variant='h2' sx={{mt: '50px'}}>Search or filter results</Typography>
                 <Typography variant='h3' sx={{my: '10px'}}>Enter a service name or keyword to find the service you're looking for:</Typography>
@@ -31,11 +31,15 @@ export default function ServicesScreen(props) {
                 />
             </Box>
 
-            <Divider sx={{my: '30px'}} />
+            <Divider sx={theme.util.divider} />
 
-            <Box sx={{mx: {lg: '10%', xl: '20%'}}}>
-                <Grid container spacing={2} columns={{xs: 1, md: 3}}>
-                        {filteredServices.map(service => <Grid key={service.id} size={{xs: 3, md: 1}}><ItemCard link={service.path} title={service.service} description={service.info}/></Grid>)}
+            <Box sx={theme.containers.responsiveSubContainer}>
+                <Grid container spacing={3} sx={theme.containers.gridContainer}>
+                        {filteredServices.map(service => 
+                            <Grid key={service.id}>
+                                <ItemCard link={service.path} title={service.service} description={service.info}/>
+                            </Grid>
+                        )}
                 </Grid>
             </Box>
         </Box>

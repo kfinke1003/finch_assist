@@ -143,7 +143,21 @@ const theme = createTheme({
       justifyContent: 'center', 
       flexDirection: 'column',
       mx: 'auto',
-      border: '3px solid red'
+      // border: '3px solid red'
+    },
+    responsiveSubContainer: {
+      // border: '3px solid blue',
+      mx: {xs: '3%', md: '5%', lg: '10%', xl: '15%'}
+    },
+    gridContainer: {
+      display: 'flex',
+      justifyContent: 'center'
+    }
+  },
+  util: {
+    divider: {
+      my: '30px',
+      mx: {xs: '3%', md: '5%', lg: '10%', xl: '15%'}
     }
   }
 });

@@ -28,7 +28,7 @@ export default function HelpScreen() {
                 <Box sx={theme.containers.responsiveSubContainer}>
                     <Grid container spacing={3} sx={theme.containers.gridContainer}>
                         <Grid><ItemCardNoLink title='Onsite' description='We typically offer in-person assistance at Bock from 8:00 AM to 5:00 PM, Monday through Friday. Assistance is also usually available at TTI once a week, though the day may vary.' /></Grid>
-                        <Grid><ItemCardNoLink title='Email' description='Please reach out to us at utwi_it@bockwaterheaters.com for assistance.' /></Grid>
+                        <Grid><ItemCardNoLink title='Email' description='Please reach out to us at it@bockwaterheaters.com for assistance.' /></Grid>
                         <Grid><ItemCardNoLink title='Phone' description='Please feel free to give us a call at extension 3339 or 3336.' /></Grid>
                     </Grid>
                 </Box>

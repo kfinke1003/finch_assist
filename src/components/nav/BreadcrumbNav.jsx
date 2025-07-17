@@ -20,7 +20,7 @@ export default function BreadcrumbNav() {
   
 
   return location.pathname === '/' ? 
-  <Box sx={{mt: '5%', ml: '20px' }}></Box>
+  <></>
   :
   (
     <Breadcrumbs aria-label="Breadcrumb" sx={[theme.containers.responsiveSubContainer, {my: '50px'}]}>

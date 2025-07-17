@@ -1,3 +1,4 @@
+
 import CardSwap, { Card } from "../extras/CardSwap";
 
 import { Typography, Box } from "@mui/material"
@@ -15,8 +16,8 @@ import CardSwapBody from "../util/CardSwapBody.jsx";
 
 export default function HomeHero() {
 
-  const height = '650px'
-  const width = '800px'
+  const height = 'calc(100vh - 142px - 150px)'
+  const width = window.innerWidth / 2
 
   const bg_colors = [
     'linear-gradient(315deg, #8BA2E0, #f5f7fa)',
@@ -30,17 +31,17 @@ export default function HomeHero() {
 const theme = useTheme()
 
   return (
-    <Box sx={{display: 'flex', justifyContent: 'center', flexDirection: 'row', borderRadius: '15px', width: 'fit-content', mx: 'auto', background: bg_colors[5], border: '3px solid red'}}>
+    <Box sx={{display: 'flex', justifyContent: 'center', flexDirection: 'row', background: bg_colors[5], border: '0px solid red'}}>
 
-      <Box sx={{ height: height, width: width, display: 'flex', justifyContent: 'center', flexDirection: 'column', px: '5%'}}>
+      <Box sx={{ height: height, width: width, display: 'flex', justifyContent: 'center', flexDirection: 'column', mx: '10%', border: '0px solid yellow'}}>
         <Typography variant='h1' sx={{ width: 'fit-content'}}>Welcome!</Typography>
         <Typography sx={theme.typography.body1}>Please use the navigation bar on the top of the page to find your way around this site.</Typography>
       </Box>
 
-      <Box sx={{ height: height, width: width, position: 'relative', overflow: 'hidden'}}>
+      <Box sx={{ height: height, width: width, display: {xs: 'none', lg: 'block'}, position: 'relative', overflow: 'hidden', border: '0px solid green'}}>
         <CardSwap
-          width = {600}
-          height = {400}
+          width = {window.innerWidth / 3 + 40}
+          height = {450}
           cardDistance={60}
           verticalDistance={70}
           delay={5000}

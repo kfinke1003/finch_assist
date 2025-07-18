@@ -31,7 +31,7 @@ export default function HomeHero() {
 const theme = useTheme()
 
   return (
-    <Box sx={{display: 'flex', justifyContent: 'center', flexDirection: 'row', background: bg_colors[5], border: '0px solid red'}}>
+    <Box sx={{display: 'flex', justifyContent: 'center', flexDirection: 'row', background: bg_colors[5], borderBottom: '5px solid blue'}}>
 
       <Box sx={{ height: height, width: width, display: 'flex', justifyContent: 'center', flexDirection: 'column', mx: '10%', border: '0px solid yellow'}}>
         <Typography variant='h1' sx={{ width: 'fit-content'}}>Welcome!</Typography>

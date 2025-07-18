@@ -16,9 +16,6 @@ export default function BreadcrumbNav() {
   const location = useLocation();
   const pathnames = location.pathname.split('/').filter((x) => x);
 
-  console.log(location);
-  
-
   return location.pathname === '/' ? 
   <></>
   :

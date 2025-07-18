@@ -13,6 +13,7 @@ import FormsScreen from '../FormsScreen/FormsScreen.jsx';
 import ProjectsScreen from '../ProjectsScreen/ProjectsScreen.jsx';
 import CybersecurityScreen from '../CybersecurityScreen/CybersecurityScreen.jsx';
 import HelpScreen from '../HelpScreen/HelpScreen.jsx';
+import NewsScreen from '../NewsScreen/NewsScreen.jsx';
 
 import { duo_md, duo_info } from '../ServicesScreen/Services/DUO.js';
 import { watchguard_vpn_info, watchguard_vpn_md } from '../ServicesScreen/Services/WatchGuardMobileVPN.js';
@@ -28,6 +29,8 @@ import { outlook_info, outlook_md } from '../ServicesScreen/Services/M365Outlook
 import { onedrive_info, onedrive_md } from '../ServicesScreen/Services/M365OneDrive.js';
 import { access_info, access_md } from '../ServicesScreen/Services/M365Access.js';
 import { powerautomate_info, powerautomate_md } from '../ServicesScreen/Services/PowerAutomate.js';
+
+import { utwiit_info, utwiit_md } from '../NewsScreen/News/UTWIIT.js';
 
 import RenderMarkdown from '../util/RenderMarkdown.jsx';
 
@@ -69,12 +72,20 @@ const forms = [
   {id: 2, form: 'Representative Account Creation Request', path: 'https://forms.cloud.microsoft/r/4funV8V47B', info: 'Use this form to request the creation of a rep account.'},
 ]
 
+const news = [
+  {id: 2, headline: 'Introducing Verified Duo Push', path: 'news/verified_duo_push', element: <RenderMarkdown markdown={'# Headline'} />, info: 'Desc'},
+  {id: 1, headline: 'Windows 10 End of Life October 2025', path: 'news/win10_eol', element: <RenderMarkdown markdown={'# Headline'} />, info: 'Desc'},
+  {id: 0, headline: 'Welcome to it.bockwaterheaters.com!', path: 'news/utwi_it', element: <RenderMarkdown markdown={utwiit_md} />, info: utwiit_info}
+]
+
 const pages = [
   {id: 0, title: 'Services', path: 'services', element: <ServicesScreen services={services} />},
   {id: 1, title: 'Forms', path: 'forms', element: <FormsScreen forms={forms} />},
-  {id: 2, title: 'Projects', path: 'projects', element: <ProjectsScreen />},
+  // {id: 2, title: 'Projects', path: 'projects', element: <ProjectsScreen />},
+  {id: 5, title: 'News', path: 'news', element: <NewsScreen news={news}/>},
   {id: 3, title: 'Cybersecurity', path: 'cybersecurity', element: <CybersecurityScreen />},
   {id: 4, title: 'Help', path: 'help', element: <HelpScreen />},
+  
 ]
 export default function Router() {
   return (
@@ -85,13 +96,15 @@ export default function Router() {
 
       <Box>
         <Routes>
-          <Route index element={<HomeScreen/>} />
+          <Route index element={<HomeScreen news={news.filter( (news, index) => index < 6)}/>} />
 
           {/* In order to give routes their own page, they must be at the parent level - even if they are of the for parent/child */}
 
           {pages.map(page => <Route key={page.id} path={page.path} element={page.element} />)}
 
           {services.map(service => <Route key={service.id} path={service.path} element={service.element}/>)}
+
+          {news.map(news => <Route key={news.id} path={news.path} element={news.element}/>)}
 
           <Route path='*' element={<PageNotFound />}/>
         </Routes>

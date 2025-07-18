@@ -147,7 +147,7 @@ const theme = createTheme({
     },
     responsiveSubContainer: {
       // border: '3px solid blue',
-      mx: {xs: '3%', md: '5%', lg: '10%', xl: '15%'}
+      px: {xs: '3%', md: '5%', lg: '10%', xl: '15%'}
     },
     gridContainer: {
       display: 'flex',

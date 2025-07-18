@@ -54,7 +54,7 @@ export default function TopNav(props) {
           sx={{ display: { xs: 'block', md: 'none' } }}
         >
           {pages.map((page) => (
-            <MenuItem key={page} onClick={handleCloseNavMenu}>
+            <MenuItem key={page.id} onClick={handleCloseNavMenu}>
               <Typography sx={{ textAlign: 'center' }}>{page}</Typography>
             </MenuItem>
           ))}
@@ -69,6 +69,7 @@ export default function TopNav(props) {
       <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
         {pages.map((page) => (
           <Button
+          key={page.id}
             component={Link}
             to={`/${page.path}`}
             sx={{ my: 2, color: 'white', display: 'block', fontSize: '1.1rem' }}

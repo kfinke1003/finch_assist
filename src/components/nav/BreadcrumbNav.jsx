@@ -2,10 +2,10 @@ import React from 'react';
 import { useTheme } from '@emotion/react';
 import { useLocation, Link as RouterLink } from 'react-router-dom';
 import { Breadcrumbs, Typography, Link } from '@mui/material';
-import Box from '@mui/material/Box';
 
 function toTitleCase(str) {
   if (str === 'vpn') return 'VPN'
+  else if (str === 'utwi_it') return 'UTWI IT'
   else return str.replace(/\b\w+/g, (s) => s.charAt(0).toUpperCase() + s.slice(1).toLowerCase());
 }
 

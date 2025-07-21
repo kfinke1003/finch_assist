@@ -10,7 +10,7 @@ import BreadcrumbNav from './BreadcrumbNav.jsx';
 import HomeScreen from '../HomeScreen/HomeScreen.jsx'
 import ServicesScreen from '../ServicesScreen/ServicesScreen.jsx'
 import FormsScreen from '../FormsScreen/FormsScreen.jsx';
-import ProjectsScreen from '../ProjectsScreen/ProjectsScreen.jsx';
+// import ProjectsScreen from '../ProjectsScreen/ProjectsScreen.jsx';
 import CybersecurityScreen from '../CybersecurityScreen/CybersecurityScreen.jsx';
 import HelpScreen from '../HelpScreen/HelpScreen.jsx';
 import NewsScreen from '../NewsScreen/NewsScreen.jsx';
@@ -31,6 +31,8 @@ import { access_info, access_md } from '../ServicesScreen/Services/M365Access.js
 import { powerautomate_info, powerautomate_md } from '../ServicesScreen/Services/PowerAutomate.js';
 
 import { utwiit_info, utwiit_md } from '../NewsScreen/News/UTWIIT.js';
+import { windows10EOL_info, windows10EOL_md } from '../NewsScreen/News/Windows10EOL.js';
+import { verified_duo_push_info, verified_duo_push_md } from '../NewsScreen/News/VerifiedDuoPush.js';
 
 import RenderMarkdown from '../util/RenderMarkdown.jsx';
 
@@ -76,8 +78,8 @@ const news = [
   // {id: 5, headline: 'Headline', path: null, element: <RenderMarkdown markdown={'# Headline'} />, info: 'Desc'},
   // {id: 4, headline: 'Headline', path: null, element: <RenderMarkdown markdown={'# Headline'} />, info: 'Desc'},
   // {id: 3, headline: 'Headline', path: null, element: <RenderMarkdown markdown={'# Headline'} />, info: 'Desc'},
-  {id: 2, headline: 'Introducing Verified Duo Push', path: 'news/verified_duo_push', element: <RenderMarkdown markdown={'# Headline'} />, info: 'Desc'},
-  {id: 1, headline: 'Windows 10 End of Life October 2025', path: 'news/win10_eol', element: <RenderMarkdown markdown={'# Headline'} />, info: 'Desc'},
+  {id: 2, headline: 'Introducing Verified Duo Push', path: 'news/verified_duo_push', element: <RenderMarkdown markdown={verified_duo_push_md} />, info: verified_duo_push_info},
+  {id: 1, headline: 'Windows 10 Sunsets on October 2025', path: 'news/windows10_eol', element: <RenderMarkdown markdown={windows10EOL_md} />, info: windows10EOL_info},
   {id: 0, headline: 'Welcome to it.bockwaterheaters.com!', path: 'news/utwi_it', element: <RenderMarkdown markdown={utwiit_md} />, info: utwiit_info}
 ]
 

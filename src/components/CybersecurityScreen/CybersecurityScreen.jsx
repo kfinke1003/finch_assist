@@ -33,6 +33,7 @@ export default function CybersecurityScreen() {
                     <Grid><ItemCardNoLink title='Phishing' description='...' /></Grid>
                     <Grid><ItemCardNoLink title='Safe Browsing' description='...' /></Grid>
                     <Grid><ItemCardNoLink title='Best Password Practices' description='...' /></Grid>
+                    <Grid><ItemCardNoLink title='Protecting Less Tech-Savvy Loved Ones' description='Steps to take if you have someone in your life who is at higher risk of being a target and falling for digital scams.' /></Grid>
                 </Grid>
             </Box>
         </Box>

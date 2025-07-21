@@ -158,6 +158,18 @@ const theme = createTheme({
     divider: {
       my: '30px',
       mx: {xs: '3%', md: '5%', lg: '10%', xl: '15%'}
+    },
+    topNavItems: {
+      my: 2, 
+      color: 'white', 
+      display: 'block', 
+      fontSize: '1.1rem'
+    },
+    topNavSubMenuItems: {
+      my: 0, 
+      color: 'black', 
+      display: 'block', 
+      fontSize: '1.1rem'
     }
   }
 });

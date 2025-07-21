@@ -20,7 +20,7 @@ export default function HomeScreen(props) {
       <HomeHero />
 
       <Box sx={[theme.containers.responsiveSubContainer, {display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', py: '50px',
-        backgroundImage: 'url(images/2000x2000_web_bg_3.png)',
+        backgroundImage: 'url(images/2000x2000_web_bg.png)',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',

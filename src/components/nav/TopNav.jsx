@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom'
+import { useTheme } from '@emotion/react';
 
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -16,6 +17,8 @@ import MenuItem from '@mui/material/MenuItem';
 export default function TopNav(props) {
   
   const { pages } = props
+
+  const theme = useTheme()
   
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
@@ -23,10 +26,10 @@ export default function TopNav(props) {
     setAnchorElNav(null);
   };
 
-  // NOTE: this section handles rendering for xs screens
+  // NOTE: this section handles rendering for xs and sm screens
   const renderXS = () => {
     return (
-      <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, border: '3px solid red' }}>
+      <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }}}>
         <IconButton
           size="large"
           aria-label="account of current user"
@@ -55,7 +58,14 @@ export default function TopNav(props) {
         >
           {pages.map((page) => (
             <MenuItem key={page.id} onClick={handleCloseNavMenu}>
-              <Typography sx={{ textAlign: 'center' }}>{page}</Typography>
+              <Button
+                key={page.id}
+                component={Link}
+                to={`/${page.path}`}
+                sx={theme.util.topNavSubMenuItems}
+              >
+                {page.title}
+              </Button>
             </MenuItem>
           ))}
         </Menu>
@@ -63,16 +73,17 @@ export default function TopNav(props) {
     )
   }
 
-  // NOTE: this section handles rendering for screens larger than xs
+  // NOTE: this section handles rendering for screens larger than sm
   const renderNormal = () => {
+    
     return (
       <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
         {pages.map((page) => (
           <Button
-          key={page.id}
+            key={page.id}
             component={Link}
             to={`/${page.path}`}
-            sx={{ my: 2, color: 'white', display: 'block', fontSize: '1.1rem' }}
+            sx={theme.util.topNavItems}
           >
             {page.title}
           </Button>
@@ -86,7 +97,7 @@ export default function TopNav(props) {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
 
-          {/* {renderXS()} */}
+          {renderXS()}
 
           {renderNormal()}
 

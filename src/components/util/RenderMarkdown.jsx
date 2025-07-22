@@ -12,7 +12,7 @@ export default function RenderMarkdown(props) {
     return (
         <Box sx={[theme.containers.pageContainer, {mb: '60px'}]}>
             <Box sx={theme.containers.responsiveSubContainer}>
-                <Markdown>{markdown}</Markdown>
+                <Markdown components={{img:({node,...props})=><img style={theme.util.markdownImage}{...props}/>}}>{markdown}</Markdown>
             </Box>
         </Box>
     )

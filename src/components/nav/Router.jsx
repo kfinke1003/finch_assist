@@ -1,6 +1,5 @@
 import React from 'react'
 import { HashRouter, Routes, Route } from 'react-router'
-import Box  from '@mui/material/Box';
 
 import Header from './Header.jsx';
 import TopNav from './TopNav.jsx';
@@ -8,90 +7,14 @@ import BreadcrumbNav from './BreadcrumbNav.jsx';
 // import Footer from './Footer.jsx';
 
 import HomeScreen from '../HomeScreen/HomeScreen.jsx'
-import ServicesScreen from '../ServicesScreen/ServicesScreen.jsx'
-import FormsScreen from '../FormsScreen/FormsScreen.jsx';
-// import ProjectsScreen from '../ProjectsScreen/ProjectsScreen.jsx';
-import CybersecurityScreen from '../CybersecurityScreen/CybersecurityScreen.jsx';
-import HelpScreen from '../HelpScreen/HelpScreen.jsx';
-import NewsScreen from '../NewsScreen/NewsScreen.jsx';
 
-import { duo_md, duo_info } from '../ServicesScreen/Services/DUO.js';
-import { watchguard_vpn_info, watchguard_vpn_md } from '../ServicesScreen/Services/WatchGuardMobileVPN.js';
-import { m365_info, m365_md } from '../ServicesScreen/Services/Microsoft365.js';
-import { ringcentral_info, ringcentral_md } from '../ServicesScreen/Services/RingCentral.js';
-import { teams_info, teams_md } from '../ServicesScreen/Services/M365Teams.js';
-import { groups_info, groups_md } from '../ServicesScreen/Services/M365Groups.js';
-import { companyCalendar_info, companyCalendar_md } from '../ServicesScreen/Services/CompanyCalendar.js';
-import { word_info, word_md } from '../ServicesScreen/Services/M365Word.js';
-import { excel_info, excel_md } from '../ServicesScreen/Services/M365Excel.js';
-import { powerpoint_info, powerpoint_md } from '../ServicesScreen/Services/M365PowerPoint.js';
-import { outlook_info, outlook_md } from '../ServicesScreen/Services/M365Outlook.js';
-import { onedrive_info, onedrive_md } from '../ServicesScreen/Services/M365OneDrive.js';
-import { access_info, access_md } from '../ServicesScreen/Services/M365Access.js';
-import { powerautomate_info, powerautomate_md } from '../ServicesScreen/Services/PowerAutomate.js';
-
-import { utwiit_info, utwiit_md } from '../NewsScreen/News/UTWIIT.js';
-import { windows10EOL_info, windows10EOL_md } from '../NewsScreen/News/Windows10EOL.js';
-import { verified_duo_push_info, verified_duo_push_md } from '../NewsScreen/News/VerifiedDuoPush.js';
-
-import RenderMarkdown from '../util/RenderMarkdown.jsx';
+import pages from '../MainPages.js';
+import services from '../ServicesScreen/Services.js';
+import news from '../NewsScreen/News.js';
 
 import PageNotFound from './PageNotFound.jsx';
 import TestScreen from '../util/TestScreen.jsx'
 
-// TODO: add news page to home page and top nav
-
-const services = [
-  {id: 0, service: 'WatchGuard Mobile VPN', path: 'services/vpn', element: <RenderMarkdown markdown={watchguard_vpn_md} />, info: watchguard_vpn_info},
-  // {id: 1, service: 'Legitronic Labeling Software', path: 'services/legi', element: <TestScreen />, info: 'Temp data.'},
-  // {id: 2, service: 'TCM', path: 'services/tcm', element: <TestScreen />, info: 'Temp data.'},
-  {id: 3, service: 'Duo MFA', path: 'services/duo', element: <RenderMarkdown markdown={duo_md} />, info: duo_info},
-  // {id: 4, service: 'Dash', path: 'services/dash', element: <TestScreen />, info: 'Temp data.'},
-  {id: 5, service: 'Microsoft 365', path: 'services/m365', element: <RenderMarkdown markdown={m365_md} />, info: m365_info},
-  {id: 6, service: 'Microsoft OneDrive', path: 'services/onedrive', element: <RenderMarkdown markdown={onedrive_md} />, info: onedrive_info},
-  {id: 7, service: 'Microsoft PowerPoint', path: 'services/powerpoint', element: <RenderMarkdown markdown={powerpoint_md} />, info: powerpoint_info},
-  {id: 8, service: 'Microsoft Outlook', path: 'services/outlook', element: <RenderMarkdown markdown={outlook_md} />, info: outlook_info},
-  {id: 9, service: 'Microsoft Teams', path: 'services/teams', element: <RenderMarkdown markdown={teams_md} />, info: teams_info},
-  {id: 10, service: 'Microsoft Word', path: 'services/word', element: <RenderMarkdown markdown={word_md} />, info: word_info},
-  {id: 11, service: 'Microsoft Excel', path: 'services/excel', element: <RenderMarkdown markdown={excel_md} />, info: excel_info},
-  {id: 12, service: 'Microsoft Access', path: 'services/access', element: <RenderMarkdown markdown={access_md} />, info: access_info},
-  {id: 13, service: 'Microsoft 365 Groups', path: 'services/groups', element: <RenderMarkdown markdown={groups_md} />, info: groups_info},
-  {id: 14, service: 'Company Calendar', path: 'services/company_calendar', element: <RenderMarkdown markdown={companyCalendar_md} />, info: companyCalendar_info},
-  // {id: 15, service: 'MDC', path: 'services/mdc', element: <TestScreen />, info: 'Temp data.'},
-  // {id: 16, service: 'SOLIDWORKS', path: 'services/solidworks', element: <TestScreen />, info: 'Temp data.'},
-  // {id: 17, service: 'AutoCAD', path: 'services/autocad', element: <TestScreen />, info: 'Temp data.'},
-  // {id: 18, service: 'PDM', path: 'services/pdm', element: <TestScreen />, info: 'Temp data.'},
-  {id: 19, service: 'RingCentral', path: 'services/ringcentral', element: <RenderMarkdown markdown={ringcentral_md} />, info: ringcentral_info},
-  {id: 20, service: 'Power Automate', path: 'services/powerautomate', element: <RenderMarkdown markdown={powerautomate_md} />, info: powerautomate_info},
-  // {id: 21, service: 'Sales Reports', path: 'services/salesreports', element: <TestScreen />, info: 'Temp data.'},
-  // {id: 22, service: 'Printing', path: 'services/printing', element: <TestScreen />, info: 'Temp data.'},
-  // {id: 23, service: 'Modula WMS', path: 'services/modula', element: <TestScreen />, info: 'Temp data.'},
-]
-
-const forms = [
-  {id: 0, form: 'IT Purchase Request', path: 'https://forms.cloud.microsoft/r/SyBtDxyaiq', info: 'Use this form to request a purchase from IT.'},
-  {id: 1, form: 'IT On-boarding & Account Creation Requests', path: 'https://forms.cloud.microsoft/r/i7t9ys7hqH', info: 'Use this form to request a user/email account be created on behalf of someone.'},
-  {id: 2, form: 'Representative Account Creation Request', path: 'https://forms.cloud.microsoft/r/4funV8V47B', info: 'Use this form to request the creation of a rep account.'},
-]
-
-const news = [
-  // {id: 5, headline: 'Headline', path: null, element: <RenderMarkdown markdown={'# Headline'} />, info: 'Desc'},
-  // {id: 4, headline: 'Headline', path: null, element: <RenderMarkdown markdown={'# Headline'} />, info: 'Desc'},
-  // {id: 3, headline: 'Headline', path: null, element: <RenderMarkdown markdown={'# Headline'} />, info: 'Desc'},
-  {id: 2, headline: 'Introducing Verified Duo Push', path: 'news/verified_duo_push', element: <RenderMarkdown markdown={verified_duo_push_md} />, info: verified_duo_push_info},
-  {id: 1, headline: 'Windows 10 Sunsets on October 2025', path: 'news/windows10_eol', element: <RenderMarkdown markdown={windows10EOL_md} />, info: windows10EOL_info},
-  {id: 0, headline: 'Welcome to it.bockwaterheaters.com!', path: 'news/utwi_it', element: <RenderMarkdown markdown={utwiit_md} />, info: utwiit_info}
-]
-
-const pages = [
-  {id: 0, title: 'Services', path: 'services', element: <ServicesScreen services={services} />},
-  {id: 1, title: 'Forms', path: 'forms', element: <FormsScreen forms={forms} />},
-  // {id: 2, title: 'Projects', path: 'projects', element: <ProjectsScreen />},
-  {id: 5, title: 'News', path: 'news', element: <NewsScreen news={news}/>},
-  {id: 3, title: 'Cybersecurity', path: 'cybersecurity', element: <CybersecurityScreen />},
-  {id: 4, title: 'Help', path: 'help', element: <HelpScreen />},
-  
-]
 export default function Router() {
   return (
     <HashRouter>
@@ -99,11 +22,10 @@ export default function Router() {
       <TopNav pages={pages}/>
       <BreadcrumbNav />
 
-      <Box>
-        <Routes>
+      <Routes>
           <Route index element={<HomeScreen news={news.filter( (news, index) => index < 6)}/>} />
 
-          {/* In order to give routes their own page, they must be at the parent level - even if they are of the for parent/child */}
+          {/* In order to give routes their own page, they must be at the parent level - even if they are of the .../parent/child format */}
 
           {pages.map(page => <Route key={page.id} path={page.path} element={page.element} />)}
 
@@ -113,7 +35,6 @@ export default function Router() {
 
           <Route path='*' element={<PageNotFound />}/>
         </Routes>
-      </Box>
       {/* <Footer/> */}
     </HashRouter>
   )

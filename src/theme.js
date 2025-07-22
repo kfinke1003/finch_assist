@@ -170,6 +170,13 @@ const theme = createTheme({
       color: 'black', 
       display: 'block', 
       fontSize: '1.1rem'
+    },
+    markdownImage: {
+      px: 'auto',
+      maxWidth: '100%',
+      scale: '0.9',
+      borderRadius: '15px',
+      boxShadow: '0 4px 20px rgba(0,0,0,0.1)'
     }
   }
 });

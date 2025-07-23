@@ -32,6 +32,5 @@ Microsoft 365 (formerly Office 365) is a suite of productivity tools hosted by M
 
 ## Support
 - Contact our IT Help Desk
-- Check out [UW Madison's Glossary of Microsoft 365 Terms](https://kb.wisc.edu/microsoft365/34729)
 
 `

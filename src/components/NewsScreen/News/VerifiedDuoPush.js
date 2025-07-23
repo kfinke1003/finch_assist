@@ -24,7 +24,7 @@ With Verified Duo Push, the an attacker is immediately stopped if they do not ha
 A fraudulent login request cannot be approved unless the attacker has access to your mobile device and computer or you manually provide the malicious actor with the login code from your own mobile device. 
 This is more secure than our current solution.
 
-![alt text goes here](/images/winlogon-verified-duo-prompt-final.png "title text goes here")
+![An image displaying the Verified Duo Push Windows logon process.](/images/winlogon-verified-duo-prompt-final.png "An image displaying the Verified Duo Push Windows logon process.")
 
 ## References
 -	[https://duo.com/blog/verified-duo-push-makes-mfa-more-secure](https://duo.com/blog/verified-duo-push-makes-mfa-more-secure)

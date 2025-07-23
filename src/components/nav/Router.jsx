@@ -11,6 +11,7 @@ import HomeScreen from '../HomeScreen/HomeScreen.jsx'
 import pages from '../MainPages.js';
 import services from '../ServicesScreen/Services.js';
 import news from '../NewsScreen/News.js';
+import cybersecurity from '../CybersecurityScreen/Cybersecurity.js';
 
 import PageNotFound from './PageNotFound.jsx';
 import TestScreen from '../util/TestScreen.jsx'
@@ -32,6 +33,8 @@ export default function Router() {
           {services.map(service => <Route key={service.id} path={service.path} element={service.element}/>)}
 
           {news.map(news => <Route key={news.id} path={news.path} element={news.element}/>)}
+
+          {cybersecurity.map(cybersecurity => <Route key={cybersecurity.id} path={cybersecurity.path} element={cybersecurity.element}/>)}
 
           <Route path='*' element={<PageNotFound />}/>
         </Routes>

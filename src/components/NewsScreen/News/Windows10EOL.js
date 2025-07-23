@@ -1,5 +1,5 @@
 
-export const windows10EOL_info = 'Microsoft has confirmed that Windows 10 will reach its official end of free support on October 14, 2025. After that date, users will no longer receive security patches, feature updates, or technical support from Microsoft'
+export const windows10EOL_info = 'Microsoft has confirmed that Windows 10 will reach its official end of free support on October 14, 2025. After that date, users will no longer receive security patches, feature updates, or technical support from Microsoft.'
 
 export const windows10EOL_md = `
 # Windows 10 Sunsets on October 2025

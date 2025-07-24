@@ -1,7 +1,5 @@
-// https://kb.wisc.edu/microsoft365/page.php?id=52404
 // https://support.microsoft.com/en-us/office/learn-about-groups-in-outlook-b565caa1-5c40-40ef-9915-60fdb2d97fa2#id0ebbf=signinorgid
 // https://support.microsoft.com/en-us/office/what-s-the-difference-between-a-microsoft-365-group-and-a-contact-list-in-outlook-ba7089fb-e464-41b2-88a8-5209499bd978
-
 
 export const groups_info = 'Groups in Microsoft 365 are a combination of distribution lists and shared mailboxes, with the addition of collaborative tools to help your team achieve a common goal.'
 

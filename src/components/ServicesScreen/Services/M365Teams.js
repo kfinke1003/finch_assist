@@ -1,6 +1,3 @@
-// https://kb.wisc.edu/microsoft365/page.php?id=73588
-// https://it.wisc.edu/services/microsoft-teams/
-
 export const teams_info = 'Microsoft Teams is a chat-based communication platform. It is a hub for messaging, meetings, and file sharing.'
 
 export const teams_md = `

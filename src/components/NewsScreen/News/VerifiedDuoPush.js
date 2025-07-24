@@ -28,7 +28,6 @@ This is more secure than our current solution.
 
 ## References
 -	[https://duo.com/blog/verified-duo-push-makes-mfa-more-secure](https://duo.com/blog/verified-duo-push-makes-mfa-more-secure)
--	[https://it.wisc.edu/security/enhancing-your-login-security-important-mfa-duo-updates-coming-in-june/](https://it.wisc.edu/security/enhancing-your-login-security-important-mfa-duo-updates-coming-in-june/)
 
 ## Support
 - Contact our [IT Help Desk](https://it.bockwaterheaters.com/#/help)

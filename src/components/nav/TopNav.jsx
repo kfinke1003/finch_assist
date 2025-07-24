@@ -57,11 +57,9 @@ export default function TopNav(props) {
           sx={{ display: { xs: 'block', md: 'none' } }}
         >
           {pages.map((page) => (
-            <MenuItem key={page.id} onClick={handleCloseNavMenu}>
+            <MenuItem key={page.id} onClick={handleCloseNavMenu} component={Link} to={`/${page.path}`}>
               <Button
                 key={page.id}
-                component={Link}
-                to={`/${page.path}`}
                 sx={theme.util.topNavSubMenuItems}
               >
                 {page.title}

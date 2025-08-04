@@ -1,8 +1,7 @@
 
 
-import { Typography, Box } from "@mui/material"
+import Box from "@mui/material/Box"
 
-import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';import SettingsIcon from '@mui/icons-material/Settings';
 import LockIcon from '@mui/icons-material/Lock';
 import FeedIcon from '@mui/icons-material/Feed';
@@ -14,7 +13,6 @@ import { useTheme } from "@emotion/react";
 import CardSwapHeader from "../util/CardSwapHeader.jsx";
 import CardSwapBody from "../util/CardSwapBody.jsx";
 
-import CenteredCarousel from "../util/CenteredCarousel.jsx";
 import { useState, useEffect } from "react";
 
 const bg_colors = [
@@ -82,7 +80,7 @@ export default function HomeHeroNew() {
   const [activeCard, setActiveCard] = useState(cards[0])
   const [rightCard, setRightCard] = useState(cards[1])
 
-  const [isRotating, setIsRotating] = useState(true)
+  // const [isRotating, setIsRotating] = useState(true)
 
   const updateCards = (id) => {
     // get map cards to array of just their ids - find index of arg id

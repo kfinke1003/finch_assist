@@ -1,5 +1,4 @@
 import { createTheme } from '@mui/material/styles';
-import CenteredCarousel from './components/util/CenteredCarousel';
 
 const theme = createTheme({
   palette: {
@@ -184,12 +183,6 @@ const theme = createTheme({
       maxWidth: '100%',
       borderRadius: '15px',
       boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
-    },
-    centeredCarouselCard: {
-      display: 'flex',
-      flexDirection: 'column',
-      border: '3px solid black',
-      borderRadius: '10px'
     },
     carouselCard: {
       position: 'absolute',

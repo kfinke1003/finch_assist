@@ -1,11 +1,11 @@
-import { useTheme } from '@emotion/react';
+// import { useTheme } from '@emotion/react';
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography';
 import CodeIcon from '@mui/icons-material/Code';
 
 export default function Header() {
 
-  const theme = useTheme()
+  // const theme = useTheme()
 
   return (
     <Box sx={{ display: 'flex', alignItems: 'center', py: '5px', px: '20px' }}>

@@ -8,7 +8,7 @@ export default function CardSwapBody(props) {
     const theme = useTheme()
 
     return (
-        <Box sx={{border: '3px solid white', width: '100%', height: '100%', borderRadius: '10px', m: '5px', background: bg}}>
+        <Box sx={{background: bg, borderBottomRightRadius: '5px', borderBottomLeftRadius: '5px', flexGrow: '1'}}>
             <Typography sx={theme.typography.card_b}>{text}</Typography>
         </Box>
     )

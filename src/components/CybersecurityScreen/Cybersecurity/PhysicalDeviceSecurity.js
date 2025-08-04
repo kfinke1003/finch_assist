@@ -1,0 +1,2 @@
+// https://www.cisa.gov/resources-tools/training/protect-physical-security-your-digital-devices - this one is more personal device oriented
+// https://www.idwatchdog.com/education/-/article/physical-security-leads-to-cybersecurity - this one is more work device oriented

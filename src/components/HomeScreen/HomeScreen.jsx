@@ -6,6 +6,7 @@ import Divider from '@mui/material/Divider';
 import { useTheme } from "@emotion/react";
 
 import HomeHero from "./HomeHero.jsx";
+import HomeHeroNew from "./HomeHeroNew.jsx";
 import ItemCard from '../util/ItemCard';
 
 export default function HomeScreen(props) {
@@ -17,10 +18,10 @@ export default function HomeScreen(props) {
   return (
     <Box sx={theme.containers.pageContainer}>
 
-      <HomeHero />
+      <HomeHeroNew />
 
       <Box sx={[theme.containers.responsiveSubContainer, {display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', py: '50px',
-        backgroundImage: 'url(images/2000x2000_web_bg.png)',
+        backgroundImage: 'url(images/bg_1920x1080_swirls_white.png)',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',

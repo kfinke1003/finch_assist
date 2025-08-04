@@ -187,13 +187,18 @@ const theme = createTheme({
     },
     carouselCard: {
       position: 'absolute',
-      width: '60%',
-      height: '200px',
+      display: 'flex',
+      flexDirection: 'column',
+      width: {xs: '350px', sm: '400px', lg: '550px'},
+      height: '400px',
       left: 0,
       right: 0,
       margin: 'auto',
       backgroundColor: 'white',
-      border: '1px solid silver'
+      border: '1px solid black',
+      transition: 'all 0.6s ease-in-out',
+      borderRadius: '10px',
+      boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
     }
   }
 });

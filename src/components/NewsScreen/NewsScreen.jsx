@@ -33,7 +33,7 @@ export default function NewsScreen(props) {
 
             <Divider sx={theme.util.divider} />
 
-            <Box sx={theme.containers.responsiveSubContainer}>
+            <Box sx={theme.containers.responsiveAccentSubContainer}>
                 <Grid container spacing={3} sx={theme.containers.gridContainer}>
                         {filteredNews.map(news => 
                             <Grid key={news.id}>

@@ -150,6 +150,12 @@ const theme = createTheme({
       // border: '3px solid blue',
       px: {xs: '3%', md: '5%', lg: '10%', xl: '15%'}
     },
+    responsiveAccentSubContainer: {
+      // border: '3px solid blue',
+      px: {xs: '3%', md: '5%', lg: '10%', xl: '15%'},
+      py: '20px',
+      backgroundImage: 'url(images/bg_1920x1080_swirls_white.png)',
+    },
     gridContainer: {
       display: 'flex',
       justifyContent: 'center'
@@ -161,10 +167,10 @@ const theme = createTheme({
       mx: {xs: '3%', md: '5%', lg: '10%', xl: '15%'}
     },
     topNavItems: {
-      my: 2, 
       color: 'white', 
       display: 'block', 
-      fontSize: '1.1rem'
+      fontSize: '1.1rem',
+      my: '0px'
     },
     topNavSubMenuItems: {
       my: 0, 

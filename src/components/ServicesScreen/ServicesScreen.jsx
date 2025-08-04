@@ -33,7 +33,7 @@ export default function ServicesScreen(props) {
 
             <Divider sx={theme.util.divider} />
 
-            <Box sx={theme.containers.responsiveSubContainer}>
+            <Box sx={theme.containers.responsiveAccentSubContainer}>
                 <Grid container spacing={3} sx={theme.containers.gridContainer}>
                         {filteredServices.map(service => 
                             <Grid key={service.id}>

@@ -34,7 +34,7 @@ export default function CybersecurityScreen(props) {
 
             <Divider sx={theme.util.divider} />
 
-            <Box sx={theme.containers.responsiveSubContainer}>
+            <Box sx={theme.containers.responsiveAccentSubContainer}>
                 <Grid container spacing={3} sx={theme.containers.gridContainer}>
                         {filteredCybersecurity.map(cybersecurity => 
                             <Grid key={cybersecurity.id}>

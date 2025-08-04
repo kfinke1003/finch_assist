@@ -8,7 +8,7 @@ export default function Header() {
   const theme = useTheme()
 
   return (
-    <Box sx={{ display: 'flex', alignItems: 'center', padding: '20px' }}>
+    <Box sx={{ display: 'flex', alignItems: 'center', py: '5px', px: '20px' }}>
       <CodeIcon sx={{ mr: 1, fontSize: '1.5rem' }} />
       <Typography
         variant="h6"

@@ -70,8 +70,6 @@ const cards = [
   },
 ]
 
-
-
 export default function HomeHeroNew() {
 
   const theme = useTheme()

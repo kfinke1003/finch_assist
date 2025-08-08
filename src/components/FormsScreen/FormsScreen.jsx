@@ -33,7 +33,7 @@ export default function FormsScreen(props) {
 
             <Divider sx={theme.util.divider} />
 
-            <Box sx={theme.containers.responsiveAccentSubContainer}>
+            <Box sx={[theme.containers.responsiveAccentSubContainer, {minHeight: '50vh'}]}>
                 <Grid container spacing={3} sx={theme.containers.gridContainer}>
                         {filteredForms.map(form => <Grid key={form.id}><ItemCardExternal link={form.path} title={form.form} description={form.info}/></Grid>)}
                 </Grid>

@@ -32,9 +32,9 @@ const cybersecurity_manifest = {
 const cybersecurity = [
     {id: 0, headline: 'Safe Browsing', path: 'cybersecurity/safe_browsing', element: <RenderMarkdown markdown={cybersecurity_manifest.safeBrowsing.md} />, info: cybersecurity_manifest.safeBrowsing.info},
     {id: 1, headline: 'Phishing', path: 'cybersecurity/phishing', element: <RenderMarkdown markdown={cybersecurity_manifest.phishing.md} w={'400px'} h={'400px'} />, info: cybersecurity_manifest.phishing.info},
-    {id: 2, headline: 'Best Password Practices', path: 'cybersecurity/best_password_practices', element: <RenderMarkdown markdown={cybersecurity_manifest.bestPasswordPractices.md} />, info: cybersecurity_manifest.bestPasswordPractices.info},
+    // {id: 2, headline: 'Best Password Practices', path: 'cybersecurity/best_password_practices', element: <RenderMarkdown markdown={cybersecurity_manifest.bestPasswordPractices.md} />, info: cybersecurity_manifest.bestPasswordPractices.info},
     // {id: 3, headline: 'Protecting Less Tech-Savvy Loved Ones', path: 'cybersecurity/protecting_loved_ones', element: <RenderMarkdown markdown={cybersecurity_manifest.protectingLovedOnes.md} />, info: cybersecurity_manifest.protectingLovedOnes.info},
-    {id: 3, headline: 'Phishing Examples', path: 'cybersecurity/phishing_examples', element: <RenderMarkdown markdown={cybersecurity_manifest.phishingExamples.md} w={'1000px'} />, info: cybersecurity_manifest.phishingExamples.info}
+    {id: 2, headline: 'Phishing Examples', path: 'cybersecurity/phishing_examples', element: <RenderMarkdown markdown={cybersecurity_manifest.phishingExamples.md} w={'1000px'} />, info: cybersecurity_manifest.phishingExamples.info}
 ]
 
 export default cybersecurity

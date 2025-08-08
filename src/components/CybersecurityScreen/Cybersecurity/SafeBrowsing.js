@@ -14,6 +14,7 @@ It is up to you to take the proper security precautions to protect yourself.
 ## Bottom Line
 1) Enable MFA—or 2FA if MFA is not available—for every one of your accounts.
 2) Start using a password manager secured behind MFA so that you can consistently use strong and complex passwords.
+3) Adhere to the Principle of Least Privilege (POLP)—only grant websites the minimum necessary rights and permissions. 
 
 ## Strengthen the security of your accounts
 
@@ -57,17 +58,43 @@ It allows you to create separate vaults so that the login credentials for shared
 A phishing attack is when a malicious actor attempts to trick you into giving them your login credentials. 
 Many phishing attacks attempt to spoof common services like Google, Microsoft, and PayPal all the while creating some sense of urgency to rush you into making a hasty decision.
 I have already written two solid articles relating to phishing.
-1) I would highly recommend reading this article which links to an interactive quiz and shows real phishing attacks. (https://it.bockwaterheaters.com/#/cybersecurity/phishing)[https://it.bockwaterheaters.com/#/cybersecurity/phishing]  
-2) This one goes into detail about the common signs of a phishing attack. (https://it.bockwaterheaters.com/#/cybersecurity/phishing_examples)[https://it.bockwaterheaters.com/#/cybersecurity/phishing_examples]
-
+1) I would highly recommend reading this article. It links to a phenomenal interactive quiz and shows some examples of real phishing attacks. [https://it.bockwaterheaters.com/#/cybersecurity/phishing_examples](https://it.bockwaterheaters.com/#/cybersecurity/phishing_examples)  
+2) This one goes into detail about the common signs of a phishing attack. [https://it.bockwaterheaters.com/#/cybersecurity/phishing](https://it.bockwaterheaters.com/#/cybersecurity/phishing)
 
 ## Safely interact with websites
 
-## Avoid using public or free Wi-Fi
+You can strengthen your internet security posture by adhering to the Principle of Least Privilege (POLP).
+POLP dictates that a website should only be granted the minimum necessary access rights and permissions required to perform its designated tasks or functions.
+If you minimize the amount of your data that can collected, not only will malicious websites have less data to steal, but you will also become a less appealing target. 
+The 3 main categories of ways that your browser tries to collect data are site permissions, third-party cookies, and stored data.
 
+Whenever you access a website or one of its services, you may see a pop up from your browser itself (not the website) asking whether or not its okay for the site to use the specified device or data.
+If the website is asking you to allow notification, I would recommend always rejecting this.
+Attackers have gotten really crafty about making the browser notifications appear as genuine Windows notifications.
+If you allow a suspicious website to send you notifications you may begin to see an alarming number of fraudulent notifications telling you that your antivirus software is expired.
+Bottom line: if you do not need the website to use your camera, microphone, or send you notifications, always block the site from using it. 
+
+Many modern websites will prompt you to allow them to save cookies on your computer. 
+Cookies are small bites of information that a browser stores about you.
+First party cookies store essential data for a website like the special token that gets generated whenever you log in to that website, the items in your shopping cart, and data that you have entered into an in-progress form.
+
+Third party cookies typically belong to a different domain (website) than the one being visited. 
+They are used to track browsing habits, including your website history, search history, the links you click on, the content you interact with on social media.
+If a malicious actor sets up their own third part cookie, then they can collect valuable information about your browsing habits.
+Having this information will allow them to carry out a more strategic attack against you.
+
+All that said, if you're just simply anonymously browsing a website, you should typically choose to reject all cookies for that site. 
+If this isn't an option, choose to only opt in to using essential cookies. 
+Additionally, most browsers have a setting that you can enable which blocks third party cookies.
+
+Most browsers will typically accumulate some sorted data as you use them. This may include browsing history, saved form data, location data, bookmarks, credentials, download history, and more.
+Some browsers allow you to opt out of the collection of some of this data, however most of it is typically mandatory.
+That being said, always keep your browser up to date and ensure that you trust every browser extension that you try to install.
+Taking these precautions will minimize the risk of someone being able to exploit a vulnerability in your browser or extensions.
 
 ## References
 - [https://www.cisa.gov/resources-tools/training/tips-stay-safe-while-surfing-web-part-1-web-browser-settings](https://www.cisa.gov/resources-tools/training/tips-stay-safe-while-surfing-web-part-1-web-browser-settings)
 - [https://safety.google/security/security-tips/](https://safety.google/security/security-tips/)
+- [https://www.paloaltonetworks.com/cyberpedia/what-is-the-principle-of-least-privilege](https://www.paloaltonetworks.com/cyberpedia/what-is-the-principle-of-least-privilege)
 
 `

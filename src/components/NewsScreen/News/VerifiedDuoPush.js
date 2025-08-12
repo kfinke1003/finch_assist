@@ -2,7 +2,7 @@ export const verified_duo_push_info = 'Verified Duo Push is a more secure authen
 
 export const verified_duo_push_md = `
 # Verified Duo Push
-*Last updated on July 21, 2025*
+*Last updated on August 12, 2025*
 
 ## Overview
 

@@ -194,10 +194,14 @@ const theme = createTheme({
       right: 0,
       margin: 'auto',
       backgroundColor: 'white',
-      border: '1px solid black',
+      border: '2px solid black',
       transition: 'all 0.6s ease-in-out',
       borderRadius: '10px',
-      boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+      boxShadow: '0 20px 10px rgba(0, 0, 0, 0.4)'
+    },
+    cardIcon: {
+      fontSize: '2.5rem',
+      color: 'white'
     }
   }
 });

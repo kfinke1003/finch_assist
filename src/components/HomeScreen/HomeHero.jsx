@@ -1,8 +1,7 @@
-
-
 import Box from "@mui/material/Box"
 
-import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';import SettingsIcon from '@mui/icons-material/Settings';
+import SettingsIcon from '@mui/icons-material/Settings';
+import MoodIcon from '@mui/icons-material/Mood';
 import LockIcon from '@mui/icons-material/Lock';
 import FeedIcon from '@mui/icons-material/Feed';
 import HelpIcon from '@mui/icons-material/Help';
@@ -24,55 +23,55 @@ const bg_colors = [
   'linear-gradient(135deg, #f5f7fa,rgb(92, 96, 169))'
 ]
 
-const cards = [
+export default function HomeHero() {
+
+  const theme = useTheme()
+
+  const cards = [
   
   {
     id: 0,
     content: <>
-      <CardSwapHeader bg={bg_colors[5]} icon={<EmojiEmotionsIcon />} text={'Welcome!'} />
+      <CardSwapHeader bg={bg_colors[5]} icon={<MoodIcon sx={theme.util.cardIcon}/>} text={'Welcome!'} />
       <CardSwapBody bg={bg_colors[5]} text={'Welcome to our website! Please take a moment to explore this site. You may find something interesting!'} />
     </>,
   },
   {
     id: 1,
     content: <>
-      <CardSwapHeader bg={bg_colors[0]} icon={<SettingsIcon />} text={'Services'} />
+      <CardSwapHeader bg={bg_colors[0]} icon={<SettingsIcon sx={theme.util.cardIcon} />} text={'Services'} />
       <CardSwapBody bg={bg_colors[0]} text={'Looking for information on a specific service? Click on the Services page.'} />
     </>,
   },
   {
     id: 2,
     content: <>
-      <CardSwapHeader bg={bg_colors[1]} icon={<FeedIcon />} text={'Forms'} />
+      <CardSwapHeader bg={bg_colors[1]} icon={<FeedIcon sx={theme.util.cardIcon} />} text={'Forms'} />
       <CardSwapBody bg={bg_colors[1]} text={'Do you have a request? There may be a form for that on the Forms page.'} />
     </>,
   },
   {
     id: 3,
     content: <>
-      <CardSwapHeader bg={bg_colors[4]} icon={<NewspaperIcon />} text={'News'} />
+      <CardSwapHeader bg={bg_colors[4]} icon={<NewspaperIcon sx={theme.util.cardIcon} />} text={'News'} />
       <CardSwapBody bg={bg_colors[4]} text={'Interested in what\'s currently going on in the department? Click on the News page.'} />
     </>,
   },
   {
     id: 4,
     content: <>
-      <CardSwapHeader bg={bg_colors[3]} icon={<LockIcon />} text={'Cybersecurity'} />
+      <CardSwapHeader bg={bg_colors[3]} icon={<LockIcon sx={theme.util.cardIcon} />} text={'Cybersecurity'} />
       <CardSwapBody bg={bg_colors[3]} text={'Want some help fortifying yourself against cyber threats? Check out the Cybersecurity page.'} />
     </>,
   },
   {
     id: 5,
     content: <>
-      <CardSwapHeader bg={bg_colors[2]} icon={<HelpIcon />} text={'Help'} />
+      <CardSwapHeader bg={bg_colors[2]} icon={<HelpIcon sx={theme.util.cardIcon} />} text={'Help'} />
       <CardSwapBody bg={bg_colors[2]} text={'Having technical issues? We can assist you over on the Help page.'} />
     </>,
   },
 ]
-
-export default function HomeHero() {
-
-  const theme = useTheme()
 
   const [activeIndex, setActiveIndex] = useState(0)
 
@@ -116,15 +115,17 @@ export default function HomeHero() {
             }
           } else if (position === 'left') {
             cardStyles = {
-              opacity: 0,
+              opacity: 0.95,
               transform: 'translateX(-60%) scale(0.8)',
               zIndex: 2,
+              display: {xs: 'none', md: 'flex'}
             }
           } else if (position === 'right') {
             cardStyles = {
-              opacity: 0,
+              opacity: 0.95,
               transform: 'translateX(60%) scale(0.8)',
               zIndex: 2,
+              display: {xs: 'none', md: 'flex'}
             }
           } else {
             // Hidden cards not shown

@@ -6,6 +6,7 @@ import { Breadcrumbs, Typography, Link } from '@mui/material';
 function toTitleCase(str) {
   if (str === 'vpn') return 'VPN'
   else if (str === 'utwi_it') return 'UTWI IT'
+  else if (str === 'verified_duo_push') return 'Verified Duo Push'
   else return str.replace(/\b\w+/g, (s) => s.charAt(0).toUpperCase() + s.slice(1).toLowerCase());
 }
 

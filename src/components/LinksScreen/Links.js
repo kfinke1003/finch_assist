@@ -67,7 +67,7 @@ const links = [
     id: 8, 
     title: 'Telus Health', 
     path: 'https://www.telus.com/en/health', 
-    info: '',
+    info: 'EAP provides up to six free sessions per issue per year with an experienced consultant to help with a range of concerns and stressors at no cost to you.',
     benefit: 'Benefit: Employee Assistance Program (EAP)',
     phone: '(888) 851-7032'
   },

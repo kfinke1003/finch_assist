@@ -24,7 +24,7 @@ export default function CybersecurityScreen(props) {
             <Box sx={theme.containers.responsiveSubContainer}>
                 <Typography variant='h1' sx={{borderBottom: '5px solid blue', width: 'fit-content'}}>Cybersecurity</Typography>
                 <Typography variant='h2' sx={{mt: '50px'}}>Search or filter results</Typography>
-                <Typography variant='h3' sx={{my: '10px'}}>Enter an name or keyword to find the article you're looking for:</Typography>
+                <Typography variant='h3' sx={{my: '10px'}}>Enter a name or keyword to find the article you're looking for:</Typography>
                 <TextField 
                     id={'cybersecurity_filter'}
                     label={'Article name or keyword'}

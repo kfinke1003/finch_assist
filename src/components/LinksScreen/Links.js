@@ -26,7 +26,7 @@ const links = [
   {
     id: 3, 
     title: 'Independence Blue Cross', 
-    path: 'http://www.myibxtpaabenefit.com/', 
+    path: 'https://www.ibx.com/login', 
     info: 'View your benefit information, view eligibility and claim status, search for in-network providers, view your ID card and use the Care Cost Estimator.',
     benefit: 'Benefit: Medical.',
     phone: '(888) 356-7899'

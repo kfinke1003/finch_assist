@@ -66,6 +66,7 @@ export default function TopNav(props) {
               </Button>
             </MenuItem>
           ))}
+          <MenuItem><Button href='https://bockwaterheaters.dozuki.com/' sx={theme.util.topNavSubMenuItems}>Dozuki</Button></MenuItem>
         </Menu>
       </Box>
     )
@@ -86,6 +87,7 @@ export default function TopNav(props) {
             {page.title}
           </Button>
         ))}
+        <Button href='https://bockwaterheaters.dozuki.com/' sx={theme.util.topNavItems}>Dozuki</Button>
       </Box>
     )
   }

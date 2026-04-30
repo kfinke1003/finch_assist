@@ -2,7 +2,7 @@ const links = [
   {
     id: 0,
     title: 'UKG',
-    path: 'https://ew44.ultipro.com/Login.aspx',
+    path: 'https://bwc725-dl.ultipro.com/',
     info: 'UKG is your HR portal. Use it to request time off, view pay statements, update personal information, update direct deposit information, do open enrollment, and more...',
     benefit: '',
     phone: '(269) 795-3364 ext. 2024'
@@ -86,6 +86,14 @@ const links = [
     info: 'Access your Prevention & Early Detection, Cancer Management, and Recovery Benefits if you pay for this voluntary benefit.',
     benefit: 'Benefit: Cancer Advocate Plus.',
     phone: '(888) 449-0425'
+  },
+  {
+    id: 11, 
+    title: 'Dozuki',
+    path: 'https://bockwaterheaters.dozuki.com/', 
+    info: 'Access guides and wiki pages relevant to the assembly of our water heater products and components. Click here to access your training course as well.',
+    benefit: '',
+    phone: ''
   },
 
 //   {id: -1, title: '', path: '', info: ''},

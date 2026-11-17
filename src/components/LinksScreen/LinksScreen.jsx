@@ -24,7 +24,8 @@ export default function LinksScreen(props) {
             <Box sx={theme.containers.responsiveSubContainer}>
                 <Typography variant='h1' sx={{borderBottom: '5px solid blue', width: 'fit-content'}}>Links</Typography>
                 <Typography variant='h3' sx={{my: '20px'}}>Click on a tile to go to the listed website.</Typography>
-                <Link variant='h3' href={'/pdf/2026_BradfordWhite_BenefitGuide_Updated.pdf'}>Benefits Guide PDF</Link>
+                {/* <Link variant='h3' href={'/pdf/2026_BradfordWhite_BenefitGuide_Updated.pdf'}>Benefits Guide PDF</Link> */}
+                <Link variant='h3' href={'https://britehr.app/BradfordWhite_2027/1?wgl=en'}>Benefits Guide PDF</Link>
                 <Typography variant='h2' sx={{mt: '30px'}}>Search or filter results</Typography>
                 <Typography variant='h3' sx={{my: '10px'}}>Enter a name or keyword to find the link you're looking for:</Typography>
                 <TextField 
